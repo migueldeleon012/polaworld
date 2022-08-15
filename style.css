@@ -282,8 +282,8 @@ header {
   cursor: grab;
 }
 
-.photos {
-  overflow-x: hidden;
+.photos .swiper-arrow {
+  display: none;
 }
 
 .photos-content img {
@@ -535,6 +535,19 @@ footer p {
     margin: 30px 0;
   }
 
+  .photos .swiper-arrow {
+    display: inline-block;
+    color: var(--accent-color);
+  }
+
+  .swiper-button-prev {
+    padding-left: 10px;
+  }
+
+  .swiper-button-next {
+    padding-right: 10px;
+  }
+
   .pricing-content {
     display: flex;
     flex-wrap: wrap;
@@ -718,6 +731,14 @@ footer p {
 
   .swiper-slide {
     padding: 0 20vw;
+  }
+
+  .swiper-button-prev {
+    padding-left: 50px;
+  }
+
+  .swiper-button-next {
+    padding-right: 50px;
   }
 
   .inquire-btn {
